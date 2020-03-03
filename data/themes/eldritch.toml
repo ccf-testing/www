@@ -1,0 +1,18 @@
+# Theme metadata
+name = "eldritch"
+
+# Is theme light or dark?
+light = true
+
+# Primary
+primary = "#3f51b5"
+
+# Menu
+menu_primary = "#3f51b5"
+menu_text = "#FFFFFF"
+menu_text_active = "#ffba67"
+menu_title = "#FFFFFF"
+
+# Home sections
+home_section_odd = "#FFFFFF"
+home_section_even = "#F7F7F7"

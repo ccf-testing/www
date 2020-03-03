@@ -1,0 +1,11 @@
+# Font style metadata
+name = "eldritch"
+
+# Optional Google font URL
+# google_fonts = "Cinzel:400,700|Exo+2:400,400i,700,700i|Fira+Mono:400,700"
+
+# Font families
+heading_font = "Exo 2"
+body_font = "Exo 2"
+nav_font = "Cinzel"
+mono_font = "Fira Mono"
