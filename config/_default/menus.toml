@@ -4,11 +4,24 @@
 #   The weight parameter defines the order that the links will appear in.
 
 [[main]]
-name = "Home"
-url = "#about"
+# pre = "<i class=\"fas fa-book pr-1\" style=\"color: #00d1b2;\"></i>"
+name = "Documentation"
+url = "doc/"
 weight = 10
 
 [[main]]
 name = "Contact"
 url = "#contact"
 weight = 60
+
+[[doc]]
+name = "Overview"
+weight = 10
+url = "/doc/"
+identifier = "home"
+
+[[doc]]
+name = "Getting Started"
+weight = 20
+url = "/doc/install/"
+identifier = "setup"
