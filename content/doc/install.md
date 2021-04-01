@@ -34,13 +34,8 @@ Since multiple ways to acquire this Python version exist (e.g., using a user-pro
 
 [Rustup](https://rustup.rs/), a toolchain manager for the Rust programming language, is also required to build the project, but not available in the Ubuntu 20.04 repositories.
 
-To install, follow the instructions given on [https://rustup.rs/](https://rustup.rs/), which, at the time of writing, are (might also require installing `curl`):
-
-```console
-$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
-
-And follow the installer that launches.
+The official installation instructions for rustup can be found under [https://rustup.rs/](https://rustup.rs/).
+We will assume rustup to be installed in the rest of this guide.
 
 Rustup requires additional configuration to build the project, follow the [instructions below](#rustup-configuration).
 
