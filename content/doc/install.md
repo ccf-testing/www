@@ -1,5 +1,5 @@
 +++
-title = "Install"
+title = "Prerequisites and Building"
 toc = false
 type = "docs"
 weight = 10
