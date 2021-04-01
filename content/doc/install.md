@@ -21,22 +21,14 @@ The packages given here were tested under Ubuntu 20.04 LTS, but probably also wo
 
 Install the following required packages:
 
-```bash
+```console
 # apt install git pipenv cmake ccache rsync ninja-build libgmp-dev autoconf
 ```
 
 ### Python 3.9
 
 Building the project requires Python 3.9, which is (at the time of writing) not available in the official Ubuntu 20.04 package repositories.
-There are multiple ways to install this version of Python on Ubuntu, one possible way would be to use a ppa that provides this version:
-
-```bash
-# apt install software-properties-common
-# add-apt-repository ppa:deadsnakes/ppa
-# apt install python3.9
-```
-
-Another way would be to, e.g., use [Pyenv](https://medium.com/@marine.ss/installing-pyenv-on-ubuntu-20-04-c3a609a20aa2) to install Python 3.9.
+Since multiple ways to acquire this Python version exist (e.g., using a user-provided ppa, installing from source or using a tool such as Pyenv), we leave this part to the user, and assume Python 3.9 to be installed in the rest of this guide.
 
 ### Rustup
 
@@ -44,24 +36,24 @@ Another way would be to, e.g., use [Pyenv](https://medium.com/@marine.ss/install
 
 To install, follow the instructions given on [https://rustup.rs/](https://rustup.rs/), which, at the time of writing, are:
 
-```bash
+```console
 $ apt install curl
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
 And follow the installer that launches.
 
-Rustup requires additional configuration to build the project, which is described further down in this page.
+Rustup requires additional configuration to build the project, follow the [instructions below](#rustup-configuration).
 
 ## Arch Linux
 
 The following packages are required to build the project:
 
-```bash
+```console
 # pacman -S git openssh python python-pipenv base-devel cmake ninja ccache rsync rustup
 ```
 
-Additionally, rustup requires additional configuration, which is described below.
+Rustup requires additional configuration, follow the [instructions below](#rustup-configuration).
 
 ## Rustup configuration
 
@@ -69,7 +61,7 @@ On both Ubuntu and Arch Linux rustup requires additional configuration to build 
 
 To do so, run the following once rustup is installed (which should be done after the OS-specific instructions above are completed):
 
-```bash
+```console
 $ rustup install nightly
 $ rustup component add --toolchain nightly rust-src
 ```
@@ -79,7 +71,7 @@ $ rustup component add --toolchain nightly rust-src
 Once all dependencies are installed, we can fetch and build the project.
 We assume that you have access to a git repository from which you can pull the workspace.
 
-```bash
+```console
 $ git clone <git repo link> workspace
 $ cd workspace
 $ ./ws build
