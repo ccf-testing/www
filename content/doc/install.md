@@ -17,7 +17,7 @@ First, dependencies to build the project need to be installed.
 
 ## Ubuntu (20.04 LTS)
 
-The packages given here were tested under Ubuntu 20.04 LTS, but probably also work on later versions of Ubuntu, maybe requiring slight adjustments.
+The packages given here were tested under Ubuntu 20.04 LTS, but could also work on later versions of Ubuntu, possibly requiring adjustments.
 
 Install the following required packages:
 
@@ -34,10 +34,9 @@ Since multiple ways to acquire this Python version exist (e.g., using a user-pro
 
 [Rustup](https://rustup.rs/), a toolchain manager for the Rust programming language, is also required to build the project, but not available in the Ubuntu 20.04 repositories.
 
-To install, follow the instructions given on [https://rustup.rs/](https://rustup.rs/), which, at the time of writing, are:
+To install, follow the instructions given on [https://rustup.rs/](https://rustup.rs/), which, at the time of writing, are (might also require installing `curl`):
 
 ```console
-$ apt install curl
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
@@ -59,7 +58,7 @@ Rustup requires additional configuration, follow the [instructions below](#rustu
 
 On both Ubuntu and Arch Linux rustup requires additional configuration to build the project.
 
-To do so, run the following once rustup is installed (which should be done after the OS-specific instructions above are completed):
+To do so, run the following once rustup is installed (which should be done after the OS-specific steps above are completed):
 
 ```console
 $ rustup install nightly
