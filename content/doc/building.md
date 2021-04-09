@@ -2,7 +2,7 @@
 title = "Building"
 toc = false
 type = "docs"
-weight = 11
+weight = 12
 
 [menu.doc]
 weight = 2

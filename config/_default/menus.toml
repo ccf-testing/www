@@ -21,7 +21,7 @@ url = "/doc/"
 identifier = "home"
 
 [[doc]]
-name = "Getting Started (menu)"
+name = "Getting Started"
 weight = 20
 url = "/doc/getting-started/"
 identifier = "setup"

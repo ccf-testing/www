@@ -2,7 +2,7 @@
 title = "Prerequisites"
 toc = true
 type = "docs"
-weight = 10
+weight = 11
 
 [menu.doc]
 weight = 1
