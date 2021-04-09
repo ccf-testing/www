@@ -11,7 +11,7 @@ parent = "setup"
 
 This page describes how to install the prerequisites required to build the project on Ubuntu (20.04 LTS) and Arch Linux.
 
-# Ubuntu (20.04 LTS)
+## Ubuntu (20.04 LTS)
 
 The packages given here were tested under Ubuntu 20.04 LTS, but could also work on later versions of Ubuntu, possibly requiring adjustments.
 
@@ -21,12 +21,12 @@ Install the following required packages:
 # apt install git pipenv cmake ccache rsync ninja-build libgmp-dev autoconf
 ```
 
-## Python 3.9
+### Python 3.9
 
 Building the project requires Python 3.9, which is (at the time of writing) not available in the official Ubuntu 20.04 package repositories.
 Since multiple ways to acquire this Python version exist (e.g., using a user-provided ppa, installing from source or using a tool such as Pyenv), we leave this part to the user, and assume Python 3.9 to be installed in the rest of this guide.
 
-## Rustup
+### Rustup
 
 [Rustup](https://rustup.rs/), a toolchain manager for the Rust programming language, is also required to build the project, but not available in the Ubuntu 20.04 repositories.
 
@@ -35,7 +35,7 @@ We will assume rustup to be installed in the rest of this guide.
 
 Rustup requires additional configuration to build the project, follow the [instructions below](#rustup-configuration).
 
-# Arch Linux
+## Arch Linux
 
 The following packages are required to build the project:
 
@@ -45,7 +45,7 @@ The following packages are required to build the project:
 
 Rustup requires additional configuration, follow the [instructions below](#rustup-configuration).
 
-# Rustup configuration
+## Rustup configuration
 
 On both Ubuntu and Arch Linux rustup requires additional configuration to build the project.
 
