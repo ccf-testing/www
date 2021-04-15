@@ -33,25 +33,10 @@ Since multiple ways to acquire this Python version exist (e.g., using a user-pro
 The official installation instructions for rustup can be found under [https://rustup.rs/](https://rustup.rs/).
 We will assume rustup to be installed in the rest of this guide.
 
-Rustup requires additional configuration to build the project, follow the [instructions below](#rustup-configuration).
-
 ## Arch Linux
 
 The following packages are required to build the project:
 
 ```console
 # pacman -S git openssh python python-pipenv base-devel cmake ninja ccache rsync rustup
-```
-
-Rustup requires additional configuration, follow the [instructions below](#rustup-configuration).
-
-## Rustup configuration
-
-On both Ubuntu and Arch Linux rustup requires additional configuration to build the project.
-
-To do so, run the following once rustup is installed (which should be done after the OS-specific steps above are completed):
-
-```console
-$ rustup install nightly
-$ rustup component add --toolchain nightly rust-src
 ```
