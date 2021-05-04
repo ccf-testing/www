@@ -73,7 +73,7 @@ Here, we see multiple files of the form `id:XXXXX` that denote inputs that took 
 In addition to concolic execution, we can use fuzzing to explore the program under test. The engine supports [AFL](https://github.com/google/AFL) as its fuzzer. To use fuzzing, we first have to compile the program with the instrumentation of the fuzzer:
 
 ```console
-$ <PATH TO AFL>/afl-clang -o crash_check_fuzzer crash_test.c
+$ <PATH TO AFL>/afl-clang -o crash_check_fuzzer crash_check.c
 ```
 
 Then we have to change three settings in the `worker_config.toml`:
@@ -138,7 +138,7 @@ concex_target = "./crash_check"
 update_interval = "1"
 ```
 
-Changing `fuzzer_target` and `concex_target` is necessary because in a distributed setting, the target binaries are sent from the master to all workers. Changing the update interval to one second is not necessary but it allows use to see the workers communicating with the master more quickly.
+Changing `fuzzer_target` and `concex_target` is necessary because in a distributed setting, the target binaries are sent from the master to all workers. Changing the update interval to one second is not necessary but it allows us to see the workers communicating with the master more quickly.
 
 Now open three terminals and enter the workspace shell in each one. In the first terminal start the first worker
 
