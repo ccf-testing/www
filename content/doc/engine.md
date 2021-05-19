@@ -115,7 +115,6 @@ to instruct the worker to connect to a master.
 Then copy `worker_config.toml` to `worker2_config.toml` and set
 
 ```toml
-ip = "127.0.0.1:8885"
 output_dir = "worker2_out"
 ```
 
