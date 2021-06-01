@@ -9,10 +9,10 @@ name = "Documentation"
 url = "doc/"
 weight = 10
 
-[[main]]
-name = "Contact"
-url = "#contact"
-weight = 60
+#[[main]]
+#name = "Contact"
+#url = "#contact"
+#weight = 60
 
 [[doc]]
 name = "Overview"
