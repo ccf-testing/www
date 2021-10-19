@@ -53,4 +53,4 @@ css_class = ""
 CCF is a hybrid concolic execution and fuzzing tool.
 Programs are compiled twice, once with additional symbolic tracing for the high-speed concolic engine and once more instrumented for fuzzing (we use a modified version of [AFL](https://github.com/google/AFL)) to quickly explore easy-to-find execution paths.
 
-<a class="btn btn-primary btn-lg" href="/doc/getting-started/" style="text-decoration-line:none" rel="noopener">Get Started! <i class="fas fa-chevron-right pr-1" aria-hidden="true"></i></a>
+<a class="btn btn-primary btn-lg" href="https://doc.ccf-testing.org" style="text-decoration-line:none; color:#FFFFFF;">Get Started! <i class="fas fa-chevron-right pl-1" aria-hidden="true"></i></a>

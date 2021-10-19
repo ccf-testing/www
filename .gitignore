@@ -1,6 +1,4 @@
-# IDEs
-.idea/
+/resources/
+/public/
 
-# Hugo
-resources/
-public/
+/static/doc/
