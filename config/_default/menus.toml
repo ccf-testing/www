@@ -6,22 +6,10 @@
 [[main]]
 # pre = "<i class=\"fas fa-book pr-1\" style=\"color: #00d1b2;\"></i>"
 name = "Documentation"
-url = "doc/"
+url = "https://doc.ccf-testing.org"
 weight = 10
 
 #[[main]]
 #name = "Contact"
 #url = "#contact"
 #weight = 60
-
-[[doc]]
-name = "Overview"
-weight = 10
-url = "/doc/"
-identifier = "home"
-
-[[doc]]
-name = "Getting Started"
-weight = 20
-url = "/doc/getting-started/"
-identifier = "setup"
